@@ -17,22 +17,22 @@ function showHome () {
 }
 
 function showSkills () {
-    document.getElementById("home").style.display = "none";
-    document.getElementById("projects").style.display = "none";
-    document.getElementById("languages").style.display = "none";
+    hide("home");
+    hide("projects");
+    hide("languages");
     document.getElementById('skills').style.display = '';
 }
 
 function showProjects () {
-    document.getElementById("skills").style.display = "none";
-    document.getElementById("home").style.display = "none";
-    document.getElementById("languages").style.display = "none";
+    hide("skills");
+    hide("home");
+    hide("languages");
     document.getElementById("projects").style.display = '';
 }
 
 function showLanguages () {
-    document.getElementById("home").style.display = "none";
-    document.getElementById("skills").style.display = "none";
-    document.getElementById("projects").style.display = "none";
+    hide("skills");
+    hide("projects");
+    hide("home");
     document.getElementById("languages").style.display = '';
 }
