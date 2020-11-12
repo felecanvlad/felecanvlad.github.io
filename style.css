@@ -1,0 +1,102 @@
+/* header, footer, #side-menu section {
+    margin: 2px;
+    padding: 4px;
+    border: 2px solid blue;
+}
+#content {
+    margin: 2px;
+    padding: 4px;
+    border: 2px solid red;
+}
+#side-menu, #main {
+    margin: 2px;
+    padding: 4px;
+    border: 2px solid green;
+} */
+
+
+ 
+body {
+    background-color: #f5f5f5;
+}
+
+
+#job-title{
+    color:blue; 
+    text-align: right;
+}
+
+#top-menu-bar {
+    text-align: center;
+    background-color: #334455;
+    color: #fff;
+}
+
+#top-menu-bar li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+#top-menu-bar a {
+    text-decoration: none;
+    padding: 0 15px 0 15px;
+    color: #fff;
+}
+#top-menu-bar a:visited {
+    color: #fff;
+}
+#top-menu-bar a:hover {
+    color: #334455;
+    background-color: #fff;
+}
+
+.page {
+    background-color: #fff;
+    margin: 16px 0;
+    padding: 24px;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+}
+
+
+li {
+    color: blue;
+}
+
+.favorite {
+    background-color: yellowgreen; 
+    font-style: italic;
+    color:  blueviolet;
+}
+html {
+    height: 100%;
+}    
+
+body {
+    margin:0; 
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header, body > section {
+    flex: 1;
+}
+header > div {
+    padding: 5px;
+}
+#content {
+    flex: 4;
+    flex-direction: row;
+    display: flex;
+}
+footer {
+    min-height: 20px;
+    text-align: center;
+}
+#side-menu {
+    flex:1;
+    padding: 5px;
+}
+#main {
+    flex: 4;
+}
