@@ -35,10 +35,17 @@ initMenu();
 
 showPage("skills");
 
-var skills = ["HTML", "CSS", "JS"];
+var skills = [
+    "HTML", 
+    "CSS", 
+    "JS"
+];
+
+var skillsLi = skills.map(function(skill){
+    console.info(skill);
+    return "<li>" + skill + "</li>"; 
+});
 
 //TO DO "add favorite skill"
 var ul = document.querySelector("#skills ul");
-ul.innerHTML =  "<li>" + skills[0] + "</li>" +
-                "<li>" + skills[1] + "</li>" + 
-                "<li>" + skills[2] + "</li>";
+ul.innerHTML =  skillsLi.join("");
