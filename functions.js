@@ -27,22 +27,7 @@ function hideAllPages() {
 
 }
 
-function showHome () {
+function showPage(pageId) {
     hideAllPages();
-    document.getElementById('home').style.display = '';
-}
-
-function showSkills () {
-    hideAllPages();
-    document.getElementById('skills').style.display = '';
-}
-
-function showProjects () {
-    hideAllPages();
-    document.getElementById("projects").style.display = '';
-}
-
-function showLanguages () {
-    hideAllPages();
-    document.getElementById("languages").style.display = '';
+    document.getElementById(pageId).style.display = '';
 }
