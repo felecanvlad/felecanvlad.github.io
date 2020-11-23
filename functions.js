@@ -38,17 +38,21 @@ initMenu();
 
 showPage(activePage);
 
-var skills = [
+var allSkills = [
     { name: "HTML", endorsments: 15 }, 
     { name: "CSS", endorsments: 5 },
     { name: "JS", endorsments: 21 }
 ];
 
-var skillsLi = skills.map(function(skill){
-    var endorsments = ` <span>&middot; ${skill.endorsments}</span>`;
-    return "<li>" + skill.name + endorsments + "</li>"; 
-});
+function showSkills (skills) {
+    var skillsLi = skills.map(function(skill){
+        var endorsments = ` <span>&middot; ${skill.endorsments}</span>`;
+        return "<li>" + skill.name + endorsments + "</li>"; 
+    });
+    
+    //TO DO "add favorite skill"
+    var ul = document.querySelector("#skills ul");
+    ul.innerHTML =  skillsLi.join("");
+}
 
-//TO DO "add favorite skill"
-var ul = document.querySelector("#skills ul");
-ul.innerHTML =  skillsLi.join("");
+showSkills(allSkills);
