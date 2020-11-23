@@ -1,4 +1,4 @@
-var activePage = "home";
+var activePage = "skills";
 
 function hide(id) {
     var el = document.getElementById(id);
@@ -39,14 +39,14 @@ initMenu();
 showPage(activePage);
 
 var skills = [
-    "HTML", 
-    "CSS", 
-    "JS"
+    { name: "HTML", endorsments: 15 }, 
+    { name: "CSS", endorsments: 5 },
+    { name: "JS", endorsments: 21 }
 ];
 
 var skillsLi = skills.map(function(skill){
-    console.info(skill);
-    return "<li>" + skill + "</li>"; 
+    var endorsments = ` <span>&middot; ${skill.endorsments}</span>`;
+    return "<li>" + skill.name + endorsments + "</li>"; 
 });
 
 //TO DO "add favorite skill"
