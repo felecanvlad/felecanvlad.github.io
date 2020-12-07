@@ -133,19 +133,14 @@ body {
     box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
 }
 
-#skills li{
-    font-weight: 800;
-}
-
 #skills li span {
     font-weight: 200;
     color: grey;
 }
 
 .favorite {
-    background-color: yellowgreen; 
-    font-style: italic;
-    color:  blueviolet;
+    font-weight: 800;
+    color: #d108b6;
 }
 
 #main h2 {
