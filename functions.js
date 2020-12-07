@@ -48,16 +48,18 @@ function getHTMLSkills(skills) {
 }
 
 function showSkills (skills) {
-    var html = getHTMLSkills(skills);
-    
-    //TO DO "add favorite skill"
     var ul = document.querySelector("#skills ul");
-    ul.innerHTML = html;
+    ul.innerHTML = getHTMLSkills(skills);
 }
 
 fetch("data/skills.json").then(function(r) {
     return r.json();
 }).then(function(allSkills) {
+    allSkills.sort(function(s1,s2) {
+    return s2.endorsments - s1.endorsments; 
+    //return s1.name < s2.name ? -1 : 1;
+    });
+
     showSkills(allSkills);
 });
 
