@@ -39,11 +39,11 @@ initMenu();
 showPage(activePage);
 
 function getHTMLSkills(skills) {
-    return skills.map(skill => {
-        return `<li class="${skill.endorsments > 9 ? "favorite" : ""}">
+    return skills.map(skill => 
+        `<li class="${skill.endorsments > 9 ? "favorite" : ""}">
         ${skill.name} <span>&middot; ${skill.endorsments}</span>
-        </li>`; 
-    }).join("");
+        </li>`
+    ).join("");
 }
 
 function showSkills (skills) {
@@ -51,14 +51,11 @@ function showSkills (skills) {
     ul.innerHTML = getHTMLSkills(skills);
 }
 
-fetch("data/skills.json").then(r => {
-    return r.json();
-}).then((allSkills) => {
-    allSkills.sort((s1,s2) => {
-    return s2.endorsments - s1.endorsments; 
-    //return s1.name < s2.name ? -1 : 1;
-    });
+fetch("data/skills.json")
+    .then(r => r.json())
+    .then((allSkills) => {
+        allSkills.sort((s1,s2) => s2.endorsments - s1.endorsments);
 
-    showSkills(allSkills);
+        showSkills(allSkills);
 });
 
