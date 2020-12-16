@@ -1,4 +1,4 @@
-let activePage = "skills";
+let activePage = "languages";
 
 function hide(id) {
     const el = document.getElementById(id);

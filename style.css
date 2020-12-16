@@ -144,3 +144,23 @@ body {
     margin-block-start: 0;
     color: #334455;
 }
+
+#languages {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#languages h2 {
+    text-align: center;
+    border-top: 2px solid #334455;
+    border-bottom: 2px solid #334455;
+}
+
+#languages th,td {
+    text-align:center; 
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
