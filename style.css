@@ -9,16 +9,10 @@ body {
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
 }
-
-h1 { 
-    margin: 5px 0;
-    color: #334455;
-}
 #header-info { 
     flex: 1;
     padding: 10px;
     text-align: center;
-    ;
 }
 #myImg {
     margin: 5px 5px 5px 5px;
@@ -100,6 +94,7 @@ header, body > section {
     flex: 4;
     flex-direction: row;
     display: flex;
+    padding: 10px;
 }
 footer {
     min-height: 10px;
@@ -110,10 +105,17 @@ footer {
 
 #side-menu {
     flex:1;
-    padding: 5px;
+    padding: 20px;
+    margin-right: 5px;
+}
+#side-menu > h2 {
+    margin-block-start: 0;
+    color: #334455;
+    text-align: center;
 }
 #main {
     flex: 4;
+    margin-left: 5px;
 }
  
 body {
@@ -164,7 +166,6 @@ body {
     border-radius: 2px;
     box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
 }
-
 #skills li span {
     font-weight: 200;
     color: grey;
@@ -182,7 +183,6 @@ body {
 
 #languages {
   border-collapse: collapse;
-  width: 100%;
 }
 
 #languages h2 {
